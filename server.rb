@@ -6,6 +6,7 @@ get '/' do
 end
 
 post '/' do
+  puts "params: #{params}"
   params.each do |k,v|
     puts "key - #{k} -- value - #{v}"
   end 
